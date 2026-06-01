@@ -1,0 +1,918 @@
+{
+  "repo": "AlotfyDev/Smart_Task",
+  "branch": "master",
+  "last_updated": "2026-06-01T10:34:19Z",
+  "file_count": 91,
+  "files": [
+    {
+      "path": ".docs/Smart_Task_Architecture/01_Domain_Model_and_Validation.md",
+      "filename": "01_Domain_Model_and_Validation.md",
+      "extension": "md",
+      "size_bytes": 3582,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Smart_Task_Architecture/01_Domain_Model_and_Validation.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Smart_Task_Architecture/01_Domain_Model_and_Validation.md"
+    },
+    {
+      "path": ".docs/Smart_Task_Architecture/02_Data_Schema_and_Persistence.md",
+      "filename": "02_Data_Schema_and_Persistence.md",
+      "extension": "md",
+      "size_bytes": 3030,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Smart_Task_Architecture/02_Data_Schema_and_Persistence.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Smart_Task_Architecture/02_Data_Schema_and_Persistence.md"
+    },
+    {
+      "path": ".docs/Smart_Task_Architecture/03_Topic_Import_Pipeline.md",
+      "filename": "03_Topic_Import_Pipeline.md",
+      "extension": "md",
+      "size_bytes": 3628,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Smart_Task_Architecture/03_Topic_Import_Pipeline.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Smart_Task_Architecture/03_Topic_Import_Pipeline.md"
+    },
+    {
+      "path": ".docs/Smart_Task_Architecture/04_Wave_Assignment_System.md",
+      "filename": "04_Wave_Assignment_System.md",
+      "extension": "md",
+      "size_bytes": 3447,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Smart_Task_Architecture/04_Wave_Assignment_System.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Smart_Task_Architecture/04_Wave_Assignment_System.md"
+    },
+    {
+      "path": ".docs/Smart_Task_Architecture/05_Verification_Method_System.md",
+      "filename": "05_Verification_Method_System.md",
+      "extension": "md",
+      "size_bytes": 3058,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Smart_Task_Architecture/05_Verification_Method_System.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Smart_Task_Architecture/05_Verification_Method_System.md"
+    },
+    {
+      "path": ".docs/Smart_Task_Architecture/06_CLI_Command_Model.md",
+      "filename": "06_CLI_Command_Model.md",
+      "extension": "md",
+      "size_bytes": 3992,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Smart_Task_Architecture/06_CLI_Command_Model.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Smart_Task_Architecture/06_CLI_Command_Model.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Orchestrator_State_Handoff_Report/session_001_handoff.md",
+      "filename": "session_001_handoff.md",
+      "extension": "md",
+      "size_bytes": 6344,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Orchestrator_State_Handoff_Report/session_001_handoff.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Orchestrator_State_Handoff_Report/session_001_handoff.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/_index.md",
+      "filename": "_index.md",
+      "extension": "md",
+      "size_bytes": 4422,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/_index.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/_index.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-01_config.md",
+      "filename": "wave-01_config.md",
+      "extension": "md",
+      "size_bytes": 2225,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-01_config.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-01_config.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-02_schema_models.md",
+      "filename": "wave-02_schema_models.md",
+      "extension": "md",
+      "size_bytes": 5063,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-02_schema_models.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-02_schema_models.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-03_json_parser_repo.md",
+      "filename": "wave-03_json_parser_repo.md",
+      "extension": "md",
+      "size_bytes": 6263,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-03_json_parser_repo.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-03_json_parser_repo.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-04_importer_exporter_wave.md",
+      "filename": "wave-04_importer_exporter_wave.md",
+      "extension": "md",
+      "size_bytes": 5051,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-04_importer_exporter_wave.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-04_importer_exporter_wave.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-05_cli.md",
+      "filename": "wave-05_cli.md",
+      "extension": "md",
+      "size_bytes": 3685,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-05_cli.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-05_cli.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-06_import_topics.md",
+      "filename": "wave-06_import_topics.md",
+      "extension": "md",
+      "size_bytes": 4430,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-06_import_topics.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-06_import_topics.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-07_identity_model.md",
+      "filename": "wave-07_identity_model.md",
+      "extension": "md",
+      "size_bytes": 3356,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-07_identity_model.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-07_identity_model.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-08_entry_scanner.md",
+      "filename": "wave-08_entry_scanner.md",
+      "extension": "md",
+      "size_bytes": 2766,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-08_entry_scanner.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-08_entry_scanner.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-09_filter_layer.md",
+      "filename": "wave-09_filter_layer.md",
+      "extension": "md",
+      "size_bytes": 3617,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-09_filter_layer.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-09_filter_layer.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-10_db_persistence.md",
+      "filename": "wave-10_db_persistence.md",
+      "extension": "md",
+      "size_bytes": 3668,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-10_db_persistence.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-10_db_persistence.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-11_cache_layer.md",
+      "filename": "wave-11_cache_layer.md",
+      "extension": "md",
+      "size_bytes": 3728,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-11_cache_layer.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-11_cache_layer.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-12_structural_graph.md",
+      "filename": "wave-12_structural_graph.md",
+      "extension": "md",
+      "size_bytes": 2608,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-12_structural_graph.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-12_structural_graph.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-13_concerns_graph.md",
+      "filename": "wave-13_concerns_graph.md",
+      "extension": "md",
+      "size_bytes": 2513,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-13_concerns_graph.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-13_concerns_graph.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-14_dependency_graph.md",
+      "filename": "wave-14_dependency_graph.md",
+      "extension": "md",
+      "size_bytes": 2600,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-14_dependency_graph.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-14_dependency_graph.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-15_tasks_graph.md",
+      "filename": "wave-15_tasks_graph.md",
+      "extension": "md",
+      "size_bytes": 2605,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-15_tasks_graph.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-15_tasks_graph.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-16_cli_migration_legacy.md",
+      "filename": "wave-16_cli_migration_legacy.md",
+      "extension": "md",
+      "size_bytes": 3587,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-16_cli_migration_legacy.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-16_cli_migration_legacy.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/graph-project-mapping.md",
+      "filename": "graph-project-mapping.md",
+      "extension": "md",
+      "size_bytes": 9800,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/graph-project-mapping.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/graph-project-mapping.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-03-execution-plan.md",
+      "filename": "wave-03-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 10075,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-03-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-03-execution-plan.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-04-execution-plan.md",
+      "filename": "wave-04-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 12017,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-04-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-04-execution-plan.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-05-execution-plan.md",
+      "filename": "wave-05-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 6940,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-05-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-05-execution-plan.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-06-execution-plan.md",
+      "filename": "wave-06-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 12586,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-06-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-06-execution-plan.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-07-execution-plan.md",
+      "filename": "wave-07-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 6175,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-07-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-07-execution-plan.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-08-execution-plan.md",
+      "filename": "wave-08-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 6064,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-08-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-08-execution-plan.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-09-execution-plan.md",
+      "filename": "wave-09-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 11098,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-09-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-09-execution-plan.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-10-execution-plan.md",
+      "filename": "wave-10-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 6478,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-10-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-10-execution-plan.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-11-execution-plan.md",
+      "filename": "wave-11-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 6377,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-11-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-11-execution-plan.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-12-execution-plan.md",
+      "filename": "wave-12-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 5479,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-12-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-12-execution-plan.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-13-execution-plan.md",
+      "filename": "wave-13-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 5106,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-13-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-13-execution-plan.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-14-execution-plan.md",
+      "filename": "wave-14-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 5225,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-14-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-14-execution-plan.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-15-execution-plan.md",
+      "filename": "wave-15-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 5211,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-15-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-15-execution-plan.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-16-execution-plan.md",
+      "filename": "wave-16-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 7224,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-16-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-16-execution-plan.md"
+    },
+    {
+      "path": ".gitattributes",
+      "filename": ".gitattributes",
+      "extension": "",
+      "size_bytes": 12,
+      "top_level_dir": ".gitattributes",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.gitattributes",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.gitattributes"
+    },
+    {
+      "path": ".github/scripts/generate_repo_index.py",
+      "filename": "generate_repo_index.py",
+      "extension": "py",
+      "size_bytes": 2628,
+      "top_level_dir": ".github",
+      "category": "repo_meta",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.github/scripts/generate_repo_index.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.github/scripts/generate_repo_index.py"
+    },
+    {
+      "path": ".github/workflows/ascc-header-audit.yml",
+      "filename": "ascc-header-audit.yml",
+      "extension": "yml",
+      "size_bytes": 1038,
+      "top_level_dir": ".github",
+      "category": "repo_meta",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.github/workflows/ascc-header-audit.yml",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.github/workflows/ascc-header-audit.yml"
+    },
+    {
+      "path": ".github/workflows/ascc-smoke-tests.yml",
+      "filename": "ascc-smoke-tests.yml",
+      "extension": "yml",
+      "size_bytes": 3688,
+      "top_level_dir": ".github",
+      "category": "repo_meta",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.github/workflows/ascc-smoke-tests.yml",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.github/workflows/ascc-smoke-tests.yml"
+    },
+    {
+      "path": ".github/workflows/create-repo-index.yml",
+      "filename": "create-repo-index.yml",
+      "extension": "yml",
+      "size_bytes": 1121,
+      "top_level_dir": ".github",
+      "category": "repo_meta",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.github/workflows/create-repo-index.yml",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.github/workflows/create-repo-index.yml"
+    },
+    {
+      "path": ".gitignore",
+      "filename": ".gitignore",
+      "extension": "",
+      "size_bytes": 127,
+      "top_level_dir": ".gitignore",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.gitignore",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.gitignore"
+    },
+    {
+      "path": "pyproject.toml",
+      "filename": "pyproject.toml",
+      "extension": "toml",
+      "size_bytes": 383,
+      "top_level_dir": "pyproject.toml",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/pyproject.toml",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/pyproject.toml"
+    },
+    {
+      "path": "smart_task/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 1016,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/__init__.py"
+    },
+    {
+      "path": "smart_task/cli/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 17593,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/cli/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/cli/__init__.py"
+    },
+    {
+      "path": "smart_task/cli/__main__.py",
+      "filename": "__main__.py",
+      "extension": "py",
+      "size_bytes": 40,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/cli/__main__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/cli/__main__.py"
+    },
+    {
+      "path": "smart_task/config/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 1806,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/config/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/config/__init__.py"
+    },
+    {
+      "path": "smart_task/exporter/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 2512,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/exporter/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/exporter/__init__.py"
+    },
+    {
+      "path": "smart_task/exporter/file_writer.py",
+      "filename": "file_writer.py",
+      "extension": "py",
+      "size_bytes": 1176,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/exporter/file_writer.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/exporter/file_writer.py"
+    },
+    {
+      "path": "smart_task/exporter/json_format.py",
+      "filename": "json_format.py",
+      "extension": "py",
+      "size_bytes": 843,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/exporter/json_format.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/exporter/json_format.py"
+    },
+    {
+      "path": "smart_task/exporter/markdown.py",
+      "filename": "markdown.py",
+      "extension": "py",
+      "size_bytes": 2984,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/exporter/markdown.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/exporter/markdown.py"
+    },
+    {
+      "path": "smart_task/importer/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 5039,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/importer/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/importer/__init__.py"
+    },
+    {
+      "path": "smart_task/importer/batch_inserter.py",
+      "filename": "batch_inserter.py",
+      "extension": "py",
+      "size_bytes": 442,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/importer/batch_inserter.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/importer/batch_inserter.py"
+    },
+    {
+      "path": "smart_task/importer/ticket_generator.py",
+      "filename": "ticket_generator.py",
+      "extension": "py",
+      "size_bytes": 1903,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/importer/ticket_generator.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/importer/ticket_generator.py"
+    },
+    {
+      "path": "smart_task/importer/yaml_parser.py",
+      "filename": "yaml_parser.py",
+      "extension": "py",
+      "size_bytes": 1345,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/importer/yaml_parser.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/importer/yaml_parser.py"
+    },
+    {
+      "path": "smart_task/json_schema/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 1130,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/json_schema/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/json_schema/__init__.py"
+    },
+    {
+      "path": "smart_task/json_schema/compatibility.py",
+      "filename": "compatibility.py",
+      "extension": "py",
+      "size_bytes": 1049,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/json_schema/compatibility.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/json_schema/compatibility.py"
+    },
+    {
+      "path": "smart_task/json_schema/schemas.py",
+      "filename": "schemas.py",
+      "extension": "py",
+      "size_bytes": 3080,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/json_schema/schemas.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/json_schema/schemas.py"
+    },
+    {
+      "path": "smart_task/json_schema/validators.py",
+      "filename": "validators.py",
+      "extension": "py",
+      "size_bytes": 3899,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/json_schema/validators.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/json_schema/validators.py"
+    },
+    {
+      "path": "smart_task/models/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 513,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/models/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/models/__init__.py"
+    },
+    {
+      "path": "smart_task/models/mapping.py",
+      "filename": "mapping.py",
+      "extension": "py",
+      "size_bytes": 2297,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/models/mapping.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/models/mapping.py"
+    },
+    {
+      "path": "smart_task/models/ticket.py",
+      "filename": "ticket.py",
+      "extension": "py",
+      "size_bytes": 5131,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/models/ticket.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/models/ticket.py"
+    },
+    {
+      "path": "smart_task/models/wave.py",
+      "filename": "wave.py",
+      "extension": "py",
+      "size_bytes": 1391,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/models/wave.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/models/wave.py"
+    },
+    {
+      "path": "smart_task/parser/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 810,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/parser/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/parser/__init__.py"
+    },
+    {
+      "path": "smart_task/parser/front_matter.py",
+      "filename": "front_matter.py",
+      "extension": "py",
+      "size_bytes": 1166,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/parser/front_matter.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/parser/front_matter.py"
+    },
+    {
+      "path": "smart_task/parser/parsing.py",
+      "filename": "parsing.py",
+      "extension": "py",
+      "size_bytes": 2094,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/parser/parsing.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/parser/parsing.py"
+    },
+    {
+      "path": "smart_task/repository/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 4828,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/repository/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/repository/__init__.py"
+    },
+    {
+      "path": "smart_task/repository/connection.py",
+      "filename": "connection.py",
+      "extension": "py",
+      "size_bytes": 1398,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/repository/connection.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/repository/connection.py"
+    },
+    {
+      "path": "smart_task/repository/crud.py",
+      "filename": "crud.py",
+      "extension": "py",
+      "size_bytes": 3747,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/repository/crud.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/repository/crud.py"
+    },
+    {
+      "path": "smart_task/repository/queries.py",
+      "filename": "queries.py",
+      "extension": "py",
+      "size_bytes": 4048,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/repository/queries.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/repository/queries.py"
+    },
+    {
+      "path": "smart_task/schema/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 1139,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/schema/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/schema/__init__.py"
+    },
+    {
+      "path": "smart_task/schema/ddl.py",
+      "filename": "ddl.py",
+      "extension": "py",
+      "size_bytes": 4194,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/schema/ddl.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/schema/ddl.py"
+    },
+    {
+      "path": "smart_task/schema/migration.py",
+      "filename": "migration.py",
+      "extension": "py",
+      "size_bytes": 1814,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/schema/migration.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/schema/migration.py"
+    },
+    {
+      "path": "smart_task/wave_manager/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 3589,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/wave_manager/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/wave_manager/__init__.py"
+    },
+    {
+      "path": "smart_task/wave_manager/assigner.py",
+      "filename": "assigner.py",
+      "extension": "py",
+      "size_bytes": 2497,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/wave_manager/assigner.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/wave_manager/assigner.py"
+    },
+    {
+      "path": "smart_task/wave_manager/stats.py",
+      "filename": "stats.py",
+      "extension": "py",
+      "size_bytes": 1468,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/wave_manager/stats.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/wave_manager/stats.py"
+    },
+    {
+      "path": "tests/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 39,
+      "top_level_dir": "tests",
+      "category": "test",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/tests/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/tests/__init__.py"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "filename": "test_cli.py",
+      "extension": "py",
+      "size_bytes": 4499,
+      "top_level_dir": "tests",
+      "category": "test",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/tests/test_cli.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/tests/test_cli.py"
+    },
+    {
+      "path": "tests/test_cli_commands.py",
+      "filename": "test_cli_commands.py",
+      "extension": "py",
+      "size_bytes": 5886,
+      "top_level_dir": "tests",
+      "category": "test",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/tests/test_cli_commands.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/tests/test_cli_commands.py"
+    },
+    {
+      "path": "tests/test_config.py",
+      "filename": "test_config.py",
+      "extension": "py",
+      "size_bytes": 2706,
+      "top_level_dir": "tests",
+      "category": "test",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/tests/test_config.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/tests/test_config.py"
+    },
+    {
+      "path": "tests/test_exporter.py",
+      "filename": "test_exporter.py",
+      "extension": "py",
+      "size_bytes": 3799,
+      "top_level_dir": "tests",
+      "category": "test",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/tests/test_exporter.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/tests/test_exporter.py"
+    },
+    {
+      "path": "tests/test_importer.py",
+      "filename": "test_importer.py",
+      "extension": "py",
+      "size_bytes": 4862,
+      "top_level_dir": "tests",
+      "category": "test",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/tests/test_importer.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/tests/test_importer.py"
+    },
+    {
+      "path": "tests/test_json_schema.py",
+      "filename": "test_json_schema.py",
+      "extension": "py",
+      "size_bytes": 10336,
+      "top_level_dir": "tests",
+      "category": "test",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/tests/test_json_schema.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/tests/test_json_schema.py"
+    },
+    {
+      "path": "tests/test_models.py",
+      "filename": "test_models.py",
+      "extension": "py",
+      "size_bytes": 11977,
+      "top_level_dir": "tests",
+      "category": "test",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/tests/test_models.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/tests/test_models.py"
+    },
+    {
+      "path": "tests/test_parser.py",
+      "filename": "test_parser.py",
+      "extension": "py",
+      "size_bytes": 8968,
+      "top_level_dir": "tests",
+      "category": "test",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/tests/test_parser.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/tests/test_parser.py"
+    },
+    {
+      "path": "tests/test_repository.py",
+      "filename": "test_repository.py",
+      "extension": "py",
+      "size_bytes": 9693,
+      "top_level_dir": "tests",
+      "category": "test",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/tests/test_repository.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/tests/test_repository.py"
+    },
+    {
+      "path": "tests/test_schema.py",
+      "filename": "test_schema.py",
+      "extension": "py",
+      "size_bytes": 11335,
+      "top_level_dir": "tests",
+      "category": "test",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/tests/test_schema.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/tests/test_schema.py"
+    },
+    {
+      "path": "tests/test_wave_manager.py",
+      "filename": "test_wave_manager.py",
+      "extension": "py",
+      "size_bytes": 5830,
+      "top_level_dir": "tests",
+      "category": "test",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/tests/test_wave_manager.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/tests/test_wave_manager.py"
+    }
+  ]
+}
