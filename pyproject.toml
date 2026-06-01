@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-task"
+version = "0.1.0"
+description = "Micro-task ticket system for specification-driven implementation orchestration"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["smart_task*"]
+
+[project.scripts]
+task-cli = "smart_task.cli:main"
