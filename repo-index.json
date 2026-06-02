@@ -1,8 +1,8 @@
 {
   "repo": "AlotfyDev/Smart_Task",
   "branch": "master",
-  "last_updated": "2026-06-01T10:34:19Z",
-  "file_count": 91,
+  "last_updated": "2026-06-02T11:07:16Z",
+  "file_count": 197,
   "files": [
     {
       "path": ".docs/Smart_Task_Architecture/01_Domain_Model_and_Validation.md",
@@ -65,10 +65,530 @@
       "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Smart_Task_Architecture/06_CLI_Command_Model.md"
     },
     {
+      "path": ".docs/Spec_Driven_Graph/01-document-taxonomy.md",
+      "filename": "01-document-taxonomy.md",
+      "extension": "md",
+      "size_bytes": 5506,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/01-document-taxonomy.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/01-document-taxonomy.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/02-chain-graph-model.md",
+      "filename": "02-chain-graph-model.md",
+      "extension": "md",
+      "size_bytes": 5843,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/02-chain-graph-model.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/02-chain-graph-model.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/03-class-prd.md",
+      "filename": "03-class-prd.md",
+      "extension": "md",
+      "size_bytes": 2603,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/03-class-prd.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/03-class-prd.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/04-class-architecture.md",
+      "filename": "04-class-architecture.md",
+      "extension": "md",
+      "size_bytes": 2734,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/04-class-architecture.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/04-class-architecture.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/05-class-spec.md",
+      "filename": "05-class-spec.md",
+      "extension": "md",
+      "size_bytes": 2592,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/05-class-spec.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/05-class-spec.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/06-class-spec-topic.md",
+      "filename": "06-class-spec-topic.md",
+      "extension": "md",
+      "size_bytes": 3082,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/06-class-spec-topic.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/06-class-spec-topic.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/07-class-interface.md",
+      "filename": "07-class-interface.md",
+      "extension": "md",
+      "size_bytes": 3005,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/07-class-interface.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/07-class-interface.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/08-class-adr.md",
+      "filename": "08-class-adr.md",
+      "extension": "md",
+      "size_bytes": 3797,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/08-class-adr.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/08-class-adr.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/09-class-plan.md",
+      "filename": "09-class-plan.md",
+      "extension": "md",
+      "size_bytes": 3046,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/09-class-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/09-class-plan.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/10-class-execution-plan.md",
+      "filename": "10-class-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 2641,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/10-class-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/10-class-execution-plan.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/11-class-audit-report.md",
+      "filename": "11-class-audit-report.md",
+      "extension": "md",
+      "size_bytes": 2936,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/11-class-audit-report.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/11-class-audit-report.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/12-class-task-wave.md",
+      "filename": "12-class-task-wave.md",
+      "extension": "md",
+      "size_bytes": 5890,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/12-class-task-wave.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/12-class-task-wave.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/_index.md",
+      "filename": "_index.md",
+      "extension": "md",
+      "size_bytes": 6666,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/_index.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/_index.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/ADR-001-graph-model-decision.md",
+      "filename": "ADR-001-graph-model-decision.md",
+      "extension": "md",
+      "size_bytes": 6673,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/ADR-001-graph-model-decision.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/ADR-001-graph-model-decision.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/00-document-registry.md",
+      "filename": "00-document-registry.md",
+      "extension": "md",
+      "size_bytes": 11946,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/00-document-registry.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/00-document-registry.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/01-architectural-taxonomy.md",
+      "filename": "01-architectural-taxonomy.md",
+      "extension": "md",
+      "size_bytes": 15589,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/01-architectural-taxonomy.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/01-architectural-taxonomy.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/adr.md",
+      "filename": "adr.md",
+      "extension": "md",
+      "size_bytes": 6191,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/adr.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/adr.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/architecture.md",
+      "filename": "architecture.md",
+      "extension": "md",
+      "size_bytes": 6568,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/architecture.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/architecture.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/audit_report.md",
+      "filename": "audit_report.md",
+      "extension": "md",
+      "size_bytes": 6861,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/audit_report.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/audit_report.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/constitution.md",
+      "filename": "constitution.md",
+      "extension": "md",
+      "size_bytes": 11251,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/constitution.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/constitution.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/cross_cutting_specs.md",
+      "filename": "cross_cutting_specs.md",
+      "extension": "md",
+      "size_bytes": 5949,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/cross_cutting_specs.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/cross_cutting_specs.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/data_structures.md",
+      "filename": "data_structures.md",
+      "extension": "md",
+      "size_bytes": 8157,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/data_structures.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/data_structures.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/dependency_graph.md",
+      "filename": "dependency_graph.md",
+      "extension": "md",
+      "size_bytes": 5839,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/dependency_graph.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/dependency_graph.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/execution_plan.md",
+      "filename": "execution_plan.md",
+      "extension": "md",
+      "size_bytes": 8128,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/execution_plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/execution_plan.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/interface.md",
+      "filename": "interface.md",
+      "extension": "md",
+      "size_bytes": 6828,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/interface.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/interface.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/plan.md",
+      "filename": "plan.md",
+      "extension": "md",
+      "size_bytes": 4713,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/plan.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/prd.md",
+      "filename": "prd.md",
+      "extension": "md",
+      "size_bytes": 6298,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/prd.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/prd.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/spec.md",
+      "filename": "spec.md",
+      "extension": "md",
+      "size_bytes": 7486,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/spec.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/spec.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/spec_topic.md",
+      "filename": "spec_topic.md",
+      "extension": "md",
+      "size_bytes": 7853,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/spec_topic.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/spec_topic.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Doc_Type_Schema/test.md",
+      "filename": "test.md",
+      "extension": "md",
+      "size_bytes": 8007,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/test.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Doc_Type_Schema/test.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/00-document-registry.json",
+      "filename": "00-document-registry.json",
+      "extension": "json",
+      "size_bytes": 3974,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/00-document-registry.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/00-document-registry.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/01-architectural-taxonomy.json",
+      "filename": "01-architectural-taxonomy.json",
+      "extension": "json",
+      "size_bytes": 7524,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/01-architectural-taxonomy.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/01-architectural-taxonomy.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/adr.json",
+      "filename": "adr.json",
+      "extension": "json",
+      "size_bytes": 1183,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/adr.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/adr.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/architecture.json",
+      "filename": "architecture.json",
+      "extension": "json",
+      "size_bytes": 5634,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/architecture.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/architecture.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/audit_report.json",
+      "filename": "audit_report.json",
+      "extension": "json",
+      "size_bytes": 3355,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/audit_report.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/audit_report.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/constitution.json",
+      "filename": "constitution.json",
+      "extension": "json",
+      "size_bytes": 1348,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/constitution.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/constitution.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/cross_cutting_specs.json",
+      "filename": "cross_cutting_specs.json",
+      "extension": "json",
+      "size_bytes": 1925,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/cross_cutting_specs.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/cross_cutting_specs.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/data_structures.json",
+      "filename": "data_structures.json",
+      "extension": "json",
+      "size_bytes": 2310,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/data_structures.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/data_structures.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/dependency_edges.json",
+      "filename": "dependency_edges.json",
+      "extension": "json",
+      "size_bytes": 1439,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/dependency_edges.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/dependency_edges.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/dependency_nodes.json",
+      "filename": "dependency_nodes.json",
+      "extension": "json",
+      "size_bytes": 1631,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/dependency_nodes.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/dependency_nodes.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/execution_plan.json",
+      "filename": "execution_plan.json",
+      "extension": "json",
+      "size_bytes": 5721,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/execution_plan.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/execution_plan.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/interface.json",
+      "filename": "interface.json",
+      "extension": "json",
+      "size_bytes": 5770,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/interface.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/interface.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/plan.json",
+      "filename": "plan.json",
+      "extension": "json",
+      "size_bytes": 5654,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/plan.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/plan.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/prd.json",
+      "filename": "prd.json",
+      "extension": "json",
+      "size_bytes": 4191,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/prd.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/prd.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/spec.json",
+      "filename": "spec.json",
+      "extension": "json",
+      "size_bytes": 3842,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/spec.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/spec.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/spec_topic.json",
+      "filename": "spec_topic.json",
+      "extension": "json",
+      "size_bytes": 2842,
+      "top_level_dir": ".docs",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/spec_topic.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/spec_topic.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/Json_Schema/test.json",
+      "filename": "test.json",
+      "extension": "json",
+      "size_bytes": 4055,
+      "top_level_dir": ".docs",
+      "category": "test",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/Json_Schema/test.json",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/Json_Schema/test.json"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/SDG_Architecture/01-repository-layer.md",
+      "filename": "01-repository-layer.md",
+      "extension": "md",
+      "size_bytes": 6502,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/SDG_Architecture/01-repository-layer.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/SDG_Architecture/01-repository-layer.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/SDG_Architecture/02-entity-registry.md",
+      "filename": "02-entity-registry.md",
+      "extension": "md",
+      "size_bytes": 5863,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/SDG_Architecture/02-entity-registry.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/SDG_Architecture/02-entity-registry.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/SDG_Architecture/03-graph-cache.md",
+      "filename": "03-graph-cache.md",
+      "extension": "md",
+      "size_bytes": 8258,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/SDG_Architecture/03-graph-cache.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/SDG_Architecture/03-graph-cache.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/SDG_Architecture/04-service-layer.md",
+      "filename": "04-service-layer.md",
+      "extension": "md",
+      "size_bytes": 9526,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/SDG_Architecture/04-service-layer.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/SDG_Architecture/04-service-layer.md"
+    },
+    {
+      "path": ".docs/Spec_Driven_Graph/SDG_Architecture/05-mcp-handler-layer.md",
+      "filename": "05-mcp-handler-layer.md",
+      "extension": "md",
+      "size_bytes": 8004,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Spec_Driven_Graph/SDG_Architecture/05-mcp-handler-layer.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Spec_Driven_Graph/SDG_Architecture/05-mcp-handler-layer.md"
+    },
+    {
       "path": ".docs/Workflow_Orchestration/Orchestrator_State_Handoff_Report/session_001_handoff.md",
       "filename": "session_001_handoff.md",
       "extension": "md",
-      "size_bytes": 6344,
+      "size_bytes": 9390,
       "top_level_dir": ".docs",
       "category": "documentation",
       "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Orchestrator_State_Handoff_Report/session_001_handoff.md",
@@ -78,7 +598,7 @@
       "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/_index.md",
       "filename": "_index.md",
       "extension": "md",
-      "size_bytes": 4422,
+      "size_bytes": 4973,
       "top_level_dir": ".docs",
       "category": "documentation",
       "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/_index.md",
@@ -245,6 +765,26 @@
       "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-16_cli_migration_legacy.md"
     },
     {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-5.1_mcp_local.md",
+      "filename": "wave-5.1_mcp_local.md",
+      "extension": "md",
+      "size_bytes": 4168,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-5.1_mcp_local.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-5.1_mcp_local.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-5.2_mcp_network.md",
+      "filename": "wave-5.2_mcp_network.md",
+      "extension": "md",
+      "size_bytes": 5357,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-5.2_mcp_network.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Subagents_Execution_Waves/wave-5.2_mcp_network.md"
+    },
+    {
       "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/graph-project-mapping.md",
       "filename": "graph-project-mapping.md",
       "extension": "md",
@@ -395,6 +935,26 @@
       "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-16-execution-plan.md"
     },
     {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-5.1-execution-plan.md",
+      "filename": "wave-5.1-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 11331,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-5.1-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-5.1-execution-plan.md"
+    },
+    {
+      "path": ".docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-5.2-execution-plan.md",
+      "filename": "wave-5.2-execution-plan.md",
+      "extension": "md",
+      "size_bytes": 9813,
+      "top_level_dir": ".docs",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-5.2-execution-plan.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.docs/Workflow_Orchestration/Wave_Execution_Detailed_Multi_Steps_Plan/wave-5.2-execution-plan.md"
+    },
+    {
       "path": ".gitattributes",
       "filename": ".gitattributes",
       "extension": "",
@@ -455,10 +1015,400 @@
       "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/.gitignore"
     },
     {
+      "path": "Embedding MCP Server/.docs/01-embedding-model-layer.md",
+      "filename": "01-embedding-model-layer.md",
+      "extension": "md",
+      "size_bytes": 7374,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/.docs/01-embedding-model-layer.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/.docs/01-embedding-model-layer.md"
+    },
+    {
+      "path": "Embedding MCP Server/.docs/02-vector-db-adapter-layer.md",
+      "filename": "02-vector-db-adapter-layer.md",
+      "extension": "md",
+      "size_bytes": 8553,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/.docs/02-vector-db-adapter-layer.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/.docs/02-vector-db-adapter-layer.md"
+    },
+    {
+      "path": "Embedding MCP Server/.docs/03-embedding-service-layer.md",
+      "filename": "03-embedding-service-layer.md",
+      "extension": "md",
+      "size_bytes": 8695,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/.docs/03-embedding-service-layer.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/.docs/03-embedding-service-layer.md"
+    },
+    {
+      "path": "Embedding MCP Server/.docs/04-configuration-layer.md",
+      "filename": "04-configuration-layer.md",
+      "extension": "md",
+      "size_bytes": 6980,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/.docs/04-configuration-layer.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/.docs/04-configuration-layer.md"
+    },
+    {
+      "path": "Embedding MCP Server/.docs/05-embedding-mcp-local-server.md",
+      "filename": "05-embedding-mcp-local-server.md",
+      "extension": "md",
+      "size_bytes": 7291,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/.docs/05-embedding-mcp-local-server.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/.docs/05-embedding-mcp-local-server.md"
+    },
+    {
+      "path": "Embedding MCP Server/.docs/06-embedding-mcp-network-server.md",
+      "filename": "06-embedding-mcp-network-server.md",
+      "extension": "md",
+      "size_bytes": 9354,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/.docs/06-embedding-mcp-network-server.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/.docs/06-embedding-mcp-network-server.md"
+    },
+    {
+      "path": "Embedding MCP Server/.docs/07-memgraph-evaluation.md",
+      "filename": "07-memgraph-evaluation.md",
+      "extension": "md",
+      "size_bytes": 6782,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "documentation",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/.docs/07-memgraph-evaluation.md",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/.docs/07-memgraph-evaluation.md"
+    },
+    {
+      "path": "Embedding MCP Server/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 411,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/__init__.py"
+    },
+    {
+      "path": "Embedding MCP Server/__main__.py",
+      "filename": "__main__.py",
+      "extension": "py",
+      "size_bytes": 0,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/__main__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/__main__.py"
+    },
+    {
+      "path": "Embedding MCP Server/common/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 0,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/common/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/common/__init__.py"
+    },
+    {
+      "path": "Embedding MCP Server/common/typing.py",
+      "filename": "typing.py",
+      "extension": "py",
+      "size_bytes": 0,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/common/typing.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/common/typing.py"
+    },
+    {
+      "path": "Embedding MCP Server/config/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 0,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/config/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/config/__init__.py"
+    },
+    {
+      "path": "Embedding MCP Server/config/settings.py",
+      "filename": "settings.py",
+      "extension": "py",
+      "size_bytes": 0,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/config/settings.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/config/settings.py"
+    },
+    {
+      "path": "Embedding MCP Server/embedding_model/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 792,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/embedding_model/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/embedding_model/__init__.py"
+    },
+    {
+      "path": "Embedding MCP Server/embedding_model/base.py",
+      "filename": "base.py",
+      "extension": "py",
+      "size_bytes": 0,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/embedding_model/base.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/embedding_model/base.py"
+    },
+    {
+      "path": "Embedding MCP Server/embedding_model/e5_model.py",
+      "filename": "e5_model.py",
+      "extension": "py",
+      "size_bytes": 3753,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/embedding_model/e5_model.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/embedding_model/e5_model.py"
+    },
+    {
+      "path": "Embedding MCP Server/embedding_model/factory.py",
+      "filename": "factory.py",
+      "extension": "py",
+      "size_bytes": 0,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/embedding_model/factory.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/embedding_model/factory.py"
+    },
+    {
+      "path": "Embedding MCP Server/embedding_service/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 425,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/embedding_service/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/embedding_service/__init__.py"
+    },
+    {
+      "path": "Embedding MCP Server/embedding_service/exceptions.py",
+      "filename": "exceptions.py",
+      "extension": "py",
+      "size_bytes": 651,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/embedding_service/exceptions.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/embedding_service/exceptions.py"
+    },
+    {
+      "path": "Embedding MCP Server/embedding_service/service.py",
+      "filename": "service.py",
+      "extension": "py",
+      "size_bytes": 4274,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/embedding_service/service.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/embedding_service/service.py"
+    },
+    {
+      "path": "Embedding MCP Server/mcp_local/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 2283,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/mcp_local/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/mcp_local/__init__.py"
+    },
+    {
+      "path": "Embedding MCP Server/mcp_local/__main__.py",
+      "filename": "__main__.py",
+      "extension": "py",
+      "size_bytes": 105,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/mcp_local/__main__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/mcp_local/__main__.py"
+    },
+    {
+      "path": "Embedding MCP Server/mcp_local/handlers.py",
+      "filename": "handlers.py",
+      "extension": "py",
+      "size_bytes": 1419,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/mcp_local/handlers.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/mcp_local/handlers.py"
+    },
+    {
+      "path": "Embedding MCP Server/mcp_local/local_server.py",
+      "filename": "local_server.py",
+      "extension": "py",
+      "size_bytes": 3489,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/mcp_local/local_server.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/mcp_local/local_server.py"
+    },
+    {
+      "path": "Embedding MCP Server/mcp_local/tools.py",
+      "filename": "tools.py",
+      "extension": "py",
+      "size_bytes": 2315,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/mcp_local/tools.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/mcp_local/tools.py"
+    },
+    {
+      "path": "Embedding MCP Server/mcp_network/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 2568,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/mcp_network/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/mcp_network/__init__.py"
+    },
+    {
+      "path": "Embedding MCP Server/mcp_network/__main__.py",
+      "filename": "__main__.py",
+      "extension": "py",
+      "size_bytes": 109,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/mcp_network/__main__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/mcp_network/__main__.py"
+    },
+    {
+      "path": "Embedding MCP Server/mcp_network/network_server.py",
+      "filename": "network_server.py",
+      "extension": "py",
+      "size_bytes": 3573,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/mcp_network/network_server.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/mcp_network/network_server.py"
+    },
+    {
+      "path": "Embedding MCP Server/mcp_network/utils/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 0,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/mcp_network/utils/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/mcp_network/utils/__init__.py"
+    },
+    {
+      "path": "Embedding MCP Server/mcp_network/utils/port.py",
+      "filename": "port.py",
+      "extension": "py",
+      "size_bytes": 2003,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/mcp_network/utils/port.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/mcp_network/utils/port.py"
+    },
+    {
+      "path": "Embedding MCP Server/pyproject.toml",
+      "filename": "pyproject.toml",
+      "extension": "toml",
+      "size_bytes": 653,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/pyproject.toml",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/pyproject.toml"
+    },
+    {
+      "path": "Embedding MCP Server/vector_db/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 217,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/vector_db/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/vector_db/__init__.py"
+    },
+    {
+      "path": "Embedding MCP Server/vector_db/base.py",
+      "filename": "base.py",
+      "extension": "py",
+      "size_bytes": 1385,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/vector_db/base.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/vector_db/base.py"
+    },
+    {
+      "path": "Embedding MCP Server/vector_db/factory.py",
+      "filename": "factory.py",
+      "extension": "py",
+      "size_bytes": 752,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/vector_db/factory.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/vector_db/factory.py"
+    },
+    {
+      "path": "Embedding MCP Server/vector_db/faiss_adapter.py",
+      "filename": "faiss_adapter.py",
+      "extension": "py",
+      "size_bytes": 4290,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/vector_db/faiss_adapter.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/vector_db/faiss_adapter.py"
+    },
+    {
+      "path": "Embedding MCP Server/vector_db/falkordb_adapter.py",
+      "filename": "falkordb_adapter.py",
+      "extension": "py",
+      "size_bytes": 0,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/vector_db/falkordb_adapter.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/vector_db/falkordb_adapter.py"
+    },
+    {
+      "path": "Embedding MCP Server/vector_db/kuzudb_adapter.py",
+      "filename": "kuzudb_adapter.py",
+      "extension": "py",
+      "size_bytes": 0,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/vector_db/kuzudb_adapter.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/vector_db/kuzudb_adapter.py"
+    },
+    {
+      "path": "Embedding MCP Server/vector_db/ladybug_adapter.py",
+      "filename": "ladybug_adapter.py",
+      "extension": "py",
+      "size_bytes": 0,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/vector_db/ladybug_adapter.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/vector_db/ladybug_adapter.py"
+    },
+    {
+      "path": "Embedding MCP Server/vector_db/pgvector_adapter.py",
+      "filename": "pgvector_adapter.py",
+      "extension": "py",
+      "size_bytes": 0,
+      "top_level_dir": "Embedding MCP Server",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/Embedding%20MCP%20Server/vector_db/pgvector_adapter.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/Embedding%20MCP%20Server/vector_db/pgvector_adapter.py"
+    },
+    {
       "path": "pyproject.toml",
       "filename": "pyproject.toml",
       "extension": "toml",
-      "size_bytes": 383,
+      "size_bytes": 519,
       "top_level_dir": "pyproject.toml",
       "category": "code_or_asset",
       "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/pyproject.toml",
@@ -548,7 +1498,7 @@
       "path": "smart_task/importer/__init__.py",
       "filename": "__init__.py",
       "extension": "py",
-      "size_bytes": 5039,
+      "size_bytes": 5078,
       "top_level_dir": "smart_task",
       "category": "code_or_asset",
       "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/importer/__init__.py",
@@ -625,6 +1575,96 @@
       "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/json_schema/validators.py"
     },
     {
+      "path": "smart_task/mcp_local/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 1611,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/mcp_local/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/mcp_local/__init__.py"
+    },
+    {
+      "path": "smart_task/mcp_local/__main__.py",
+      "filename": "__main__.py",
+      "extension": "py",
+      "size_bytes": 46,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/mcp_local/__main__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/mcp_local/__main__.py"
+    },
+    {
+      "path": "smart_task/mcp_local/handlers.py",
+      "filename": "handlers.py",
+      "extension": "py",
+      "size_bytes": 3266,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/mcp_local/handlers.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/mcp_local/handlers.py"
+    },
+    {
+      "path": "smart_task/mcp_local/local_server.py",
+      "filename": "local_server.py",
+      "extension": "py",
+      "size_bytes": 6269,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/mcp_local/local_server.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/mcp_local/local_server.py"
+    },
+    {
+      "path": "smart_task/mcp_local/tools.py",
+      "filename": "tools.py",
+      "extension": "py",
+      "size_bytes": 6892,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/mcp_local/tools.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/mcp_local/tools.py"
+    },
+    {
+      "path": "smart_task/mcp_network/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 1923,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/mcp_network/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/mcp_network/__init__.py"
+    },
+    {
+      "path": "smart_task/mcp_network/__main__.py",
+      "filename": "__main__.py",
+      "extension": "py",
+      "size_bytes": 48,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/mcp_network/__main__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/mcp_network/__main__.py"
+    },
+    {
+      "path": "smart_task/mcp_network/network_server.py",
+      "filename": "network_server.py",
+      "extension": "py",
+      "size_bytes": 6414,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/mcp_network/network_server.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/mcp_network/network_server.py"
+    },
+    {
+      "path": "smart_task/mcp_network/utils/__init__.py",
+      "filename": "__init__.py",
+      "extension": "py",
+      "size_bytes": 2003,
+      "top_level_dir": "smart_task",
+      "category": "code_or_asset",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/mcp_network/utils/__init__.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/smart_task/mcp_network/utils/__init__.py"
+    },
+    {
       "path": "smart_task/models/__init__.py",
       "filename": "__init__.py",
       "extension": "py",
@@ -698,7 +1738,7 @@
       "path": "smart_task/repository/__init__.py",
       "filename": "__init__.py",
       "extension": "py",
-      "size_bytes": 4828,
+      "size_bytes": 4965,
       "top_level_dir": "smart_task",
       "category": "code_or_asset",
       "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/smart_task/repository/__init__.py",
@@ -863,6 +1903,26 @@
       "category": "test",
       "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/tests/test_json_schema.py",
       "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/tests/test_json_schema.py"
+    },
+    {
+      "path": "tests/test_mcp_local.py",
+      "filename": "test_mcp_local.py",
+      "extension": "py",
+      "size_bytes": 9383,
+      "top_level_dir": "tests",
+      "category": "test",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/tests/test_mcp_local.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/tests/test_mcp_local.py"
+    },
+    {
+      "path": "tests/test_mcp_network.py",
+      "filename": "test_mcp_network.py",
+      "extension": "py",
+      "size_bytes": 3225,
+      "top_level_dir": "tests",
+      "category": "test",
+      "raw_url": "https://raw.githubusercontent.com/AlotfyDev/Smart_Task/master/tests/test_mcp_network.py",
+      "github_url": "https://github.com/AlotfyDev/Smart_Task/blob/master/tests/test_mcp_network.py"
     },
     {
       "path": "tests/test_models.py",
