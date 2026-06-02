@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "audit-report-json-fields",
+  "title": "Audit Report JSON Fields Schema",
+  "type": "object",
+  "properties": {
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "finding_id": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": ["pass", "warning", "violation"]
+          },
+          "description": { "type": "string" },
+          "severity": {
+            "type": "string",
+            "enum": ["critical", "major", "minor"]
+          },
+          "source": { "type": "string" },
+          "recommendation": { "type": "string" },
+          "related_test_gap": { "type": "string" }
+        },
+        "required": ["finding_id", "category", "description", "source", "recommendation"],
+        "additionalProperties": false
+      }
+    },
+    "violations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "violation_id": { "type": "string" },
+          "rule_id": { "type": "string" },
+          "description": { "type": "string" },
+          "severity": {
+            "type": "string",
+            "enum": ["critical", "major", "minor"]
+          },
+          "affected_component": { "type": "string" },
+          "remediation": { "type": "string" },
+          "resolved": { "type": "boolean", "default": false }
+        },
+        "required": ["violation_id", "rule_id", "description", "severity", "affected_component", "remediation"],
+        "additionalProperties": false
+      }
+    },
+    "coverage_report": {
+      "type": "object",
+      "properties": {
+        "tested_capabilities": { "type": "integer", "minimum": 0 },
+        "total_capabilities": { "type": "integer", "minimum": 0 },
+        "coverage_percentage": { "type": "number", "minimum": 0, "maximum": 100 },
+        "missed_gaps": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "untested_capabilities": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["tested_capabilities", "total_capabilities", "coverage_percentage"],
+      "additionalProperties": false
+    },
+    "informed_by_tests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "test_id": { "type": "string" },
+          "gap_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "relevance": { "type": "string" }
+        },
+        "required": ["test_id", "gap_ids", "relevance"],
+        "additionalProperties": false
+      }
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "recommendation_id": { "type": "string" },
+          "action": { "type": "string" },
+          "priority": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "target_type": {
+            "type": "string",
+            "enum": ["adr", "plan", "ep", "task"]
+          },
+          "target_id": { "type": "string" }
+        },
+        "required": ["recommendation_id", "action", "priority", "target_type"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["findings"],
+  "additionalProperties": false
+}

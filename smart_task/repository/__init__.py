@@ -8,6 +8,7 @@ Exports
 
 from __future__ import annotations
 
+import threading
 from pathlib import Path
 from typing import Any
 
@@ -43,6 +44,7 @@ class TicketRepository:
     def __init__(self, db_path: Path, auto_create: bool = True) -> None:
         self._db_path = db_path
         self._connection: Any = None
+        self._lock = threading.Lock()
         if auto_create:
             conn = init_database(db_path)
             conn.close()
@@ -58,7 +60,9 @@ class TicketRepository:
 
     def _conn(self) -> Any:
         if self._connection is None:
-            self._connection = init_database(self._db_path)
+            with self._lock:
+                if self._connection is None:
+                    self._connection = init_database(self._db_path)
         return self._connection
 
     def ensure_schema(self) -> None:

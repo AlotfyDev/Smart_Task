@@ -13,6 +13,9 @@ PHASE 0: smart_task Infrastructure (Waves 1-6)
   Wave  3 ── json_schema.py + parser.py + repo   ○ depends on 2
   Wave  4 ── importer + exporter + wave_manager  ○ depends on 3
   Wave  5 ── cli.py                              ○ depends on 4
+  Wave 5.1 ─ MCP Local (stdio)                   ○ depends on 5
+  Wave 5.2 ─ MCP Network (SSE)                   ○ depends on 5.1
+  Wave 5.3 ─ Agentic Workflow [deferred]         ○ depends on 5.2
   Wave  6 ── Import 157 topic files → tickets    ○ depends on 5
 
 PHASE 1: Scanner Core (Waves 7-11)
@@ -43,7 +46,12 @@ PHASE 3: CLI Migration & Cleanup (Wave 16)
           |
         Wave 4
           |
-        Wave 5
+      +--Wave 5--+
+      |     |     |
+  Wave |  Wave 5.2
+  5.1  |  (SSE)
+  (stdio) |
+      Wave 5.3 (Agentic Workflow) [deferred]
           |
         Wave 6
           |
@@ -81,6 +89,9 @@ PHASE 3: CLI Migration & Cleanup (Wave 16)
 | 3 | `wave-03_json_parser_repo.md` | 0 | 2 | `json_schema.py`, `parser.py`, `repository.py` |
 | 4 | `wave-04_importer_exporter_wave.md` | 0 | 3 | `importer.py`, `exporter.py`, `wave_manager.py` |
 | 5 | `wave-05_cli.md` | 0 | 4 | `cli.py` |
+| 5.1 | `wave-5.1_mcp_local.md` | 0 | 5 | `mcp_local/` (stdio MCP server) |
+| 5.2 | `wave-5.2_mcp_network.md` | 0 | 5.1 | `mcp_network/` (SSE MCP server) |
+| 5.3 | *(deferred)* | 0 | 5.2 | Agentic Workflow |
 | 6 | `wave-06_import_topics.md` | 0 | 5 | mapping rules + DB population |
 | 7 | `wave-07_identity_model.md` | 1 | — | `samples/scanner/identity_model.py` |
 | 8 | `wave-08_entry_scanner.md` | 1 | 7 | `samples/scanner/entry_point.py` |
@@ -93,5 +104,5 @@ PHASE 3: CLI Migration & Cleanup (Wave 16)
 | 15 | `wave-15_tasks_graph.md` | 2 | 10, 11 | `samples/parsers/tasks_parser.py` (rewrite) |
 | 16 | `wave-16_cli_migration_legacy.md` | 3 | 12-15 | `samples/cli.py` + `samples/__init__.py` + remove legacy |
 
-## Total Waves: 16
-## Total Sub-Agent Invocations: 16 (sequential by dependency)
+## Total Waves: 19 (16 + 3 sub-waves)
+## Total Sub-Agent Invocations: 19 (sequential by dependency)

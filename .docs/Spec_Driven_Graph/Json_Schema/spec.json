@@ -1,0 +1,144 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "spec-json-fields",
+  "title": "Spec JSON Fields Schema",
+  "type": "object",
+  "properties": {
+    "scope": {
+      "type": "object",
+      "properties": {
+        "in_scope": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "out_of_scope": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["in_scope", "out_of_scope"],
+      "additionalProperties": false
+    },
+    "interfaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "kind": {
+            "type": "string",
+            "enum": ["command", "query", "event"]
+          },
+          "behavior": { "type": "string" },
+          "preconditions": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "postconditions": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "code": { "type": "string" },
+                "message": { "type": "string" }
+              },
+              "required": ["code", "message"],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": ["name", "kind", "behavior"],
+        "additionalProperties": false
+      }
+    },
+    "validation_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "field": { "type": "string" },
+          "rule": { "type": "string" },
+          "error_message": { "type": "string" }
+        },
+        "required": ["field", "rule", "error_message"],
+        "additionalProperties": false
+      }
+    },
+    "edge_cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "scenario": { "type": "string" },
+          "expected": { "type": "string" }
+        },
+        "required": ["id", "scenario", "expected"],
+        "additionalProperties": false
+      }
+    },
+    "verify_criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "criterion": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["unit", "integration", "e2e"]
+          },
+          "automated": {
+            "type": "boolean",
+            "default": true
+          }
+        },
+        "required": ["id", "criterion", "type"],
+        "additionalProperties": false
+      }
+    },
+    "state_transitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "from": { "type": "string" },
+          "to": { "type": "string" },
+          "trigger": { "type": "string" }
+        },
+        "required": ["from", "to", "trigger"],
+        "additionalProperties": false
+      }
+    },
+    "compatibility": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "concern": { "type": "string" },
+          "requirement": { "type": "string" }
+        },
+        "required": ["concern", "requirement"],
+        "additionalProperties": false
+      }
+    },
+    "satisfies_req": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "xspec_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "dst_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["scope", "interfaces", "validation_rules", "edge_cases", "verify_criteria", "satisfies_req"],
+  "additionalProperties": false
+}

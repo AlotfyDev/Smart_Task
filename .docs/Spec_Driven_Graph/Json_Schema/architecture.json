@@ -1,0 +1,187 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Architecture JSON Fields",
+  "type": "object",
+  "properties": {
+    "goals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "description": { "type": "string" },
+          "priority": { "type": "string", "enum": ["high", "medium", "low"] }
+        },
+        "required": ["id", "description", "priority"]
+      }
+    },
+    "non_goals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "description": { "type": "string" },
+          "rationale": { "type": "string" }
+        },
+        "required": ["id", "description", "rationale"]
+      }
+    },
+    "component_map": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string" },
+          "layers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "components": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": { "type": "string" },
+                      "name": { "type": "string" },
+                      "type": { "type": "string", "enum": ["service", "library", "module", "function"] },
+                      "responsibility": { "type": "string" },
+                      "depends_on": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                      },
+                      "interfaces": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                      }
+                    },
+                    "required": ["id", "name", "type", "responsibility"]
+                  }
+                }
+              },
+              "required": ["name", "components"]
+            }
+          }
+        },
+        "required": ["domain", "layers"]
+      }
+    },
+    "data_model": {
+      "type": "object",
+      "properties": {
+        "entities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "domain": { "type": "string" },
+              "description": { "type": "string" }
+            },
+            "required": ["name", "domain", "description"]
+          }
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "from": { "type": "string" },
+              "to": { "type": "string" },
+              "type": { "type": "string", "enum": ["one_to_many", "many_to_many", "belongs_to"] }
+            },
+            "required": ["from", "to", "type"]
+          }
+        }
+      },
+      "required": ["entities", "relationships"]
+    },
+    "data_flow": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "scenario": { "type": "string" },
+          "flows": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "from": { "type": "string" },
+                "to": { "type": "string" },
+                "data": { "type": "string" },
+                "trigger": { "type": "string" }
+              },
+              "required": ["from", "to", "data", "trigger"]
+            }
+          }
+        },
+        "required": ["scenario", "flows"]
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "risk": { "type": "string" },
+          "probability": { "type": "string", "enum": ["low", "medium", "high"] },
+          "impact": { "type": "string", "enum": ["low", "medium", "high"] },
+          "mitigation": { "type": "string" }
+        },
+        "required": ["id", "risk", "probability", "impact", "mitigation"]
+      }
+    },
+    "req_coverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "req_id": { "type": "string" },
+          "domains": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "layers": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "components": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "required": ["req_id", "domains", "layers", "components"]
+      }
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "option": { "type": "string" },
+          "tradeoffs": { "type": "string" },
+          "reason_rejected": { "type": "string" }
+        },
+        "required": ["option", "tradeoffs", "reason_rejected"]
+      }
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "question": { "type": "string" },
+          "assigned_to": { "type": "string" },
+          "status": { "type": "string", "enum": ["open", "resolved"] }
+        },
+        "required": ["id", "question", "assigned_to", "status"]
+      }
+    }
+  },
+  "required": ["goals", "non_goals", "component_map", "data_model", "data_flow", "risks", "req_coverage"]
+}

@@ -1,0 +1,140 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PRD JSON Fields",
+  "type": "object",
+  "properties": {
+    "goals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "description": { "type": "string" },
+          "priority": { "type": "string", "enum": ["high", "medium", "low"] }
+        },
+        "required": ["id", "description", "priority"]
+      }
+    },
+    "personas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "role": { "type": "string" },
+          "needs": { "type": "string" },
+          "pain_points": { "type": "string" }
+        },
+        "required": ["id", "name", "role", "needs", "pain_points"]
+      }
+    },
+    "user_stories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "as_a": { "type": "string" },
+          "i_want": { "type": "string" },
+          "so_that": { "type": "string" },
+          "priority": { "type": "string", "enum": ["high", "medium", "low"] },
+          "goal_ref": { "type": "string" }
+        },
+        "required": ["id", "as_a", "i_want", "so_that", "priority", "goal_ref"]
+      }
+    },
+    "functional_requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "statement": { "type": "string" },
+          "acceptance": { "type": "string" },
+          "story_ref": { "type": "string" }
+        },
+        "required": ["id", "statement", "acceptance", "story_ref"]
+      }
+    },
+    "non_functional_req": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": ["performance", "security", "availability", "accessibility", "reliability"]
+          },
+          "statement": { "type": "string" },
+          "target": { "type": "string" }
+        },
+        "required": ["id", "category", "statement", "target"]
+      }
+    },
+    "success_metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "metric": { "type": "string" },
+          "target": { "type": "string" },
+          "measurement": { "type": "string" }
+        },
+        "required": ["id", "metric", "target", "measurement"]
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "type": { "type": "string", "enum": ["technical", "regulatory", "time", "budget"] },
+          "description": { "type": "string" }
+        },
+        "required": ["id", "type", "description"]
+      }
+    },
+    "release_criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "criterion": { "type": "string" },
+          "must_pass": { "type": "boolean" }
+        },
+        "required": ["id", "criterion", "must_pass"]
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "assumption": { "type": "string" },
+          "impact": { "type": "string" }
+        },
+        "required": ["id", "assumption", "impact"]
+      }
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "question": { "type": "string" },
+          "assigned_to": { "type": "string" },
+          "status": { "type": "string", "enum": ["open", "resolved"] }
+        },
+        "required": ["id", "question", "assigned_to", "status"]
+      }
+    }
+  },
+  "required": ["goals", "user_stories", "functional_requirements", "non_functional_req", "success_metrics", "constraints", "release_criteria"]
+}

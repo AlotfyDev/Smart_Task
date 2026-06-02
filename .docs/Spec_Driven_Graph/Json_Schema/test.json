@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "test-json-fields",
+  "title": "Test JSON Fields Schema",
+  "type": "object",
+  "properties": {
+    "capability_matrix": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "capability": { "type": "string" },
+          "expected_behavior": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["present", "absent", "weak", "incorrect"]
+          },
+          "gap_severity": {
+            "type": "string",
+            "enum": ["critical", "major", "minor", "none"]
+          },
+          "root_cause": { "type": "string" },
+          "root_cause_type": {
+            "type": "string",
+            "enum": ["architectural", "implementation", "requirement_gap", "design_flaw", "none"]
+          }
+        },
+        "required": ["capability", "expected_behavior", "status", "gap_severity"],
+        "additionalProperties": false
+      }
+    },
+    "logical_gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "gap_id": { "type": "string" },
+          "description": { "type": "string" },
+          "capability": { "type": "string" },
+          "root_cause": { "type": "string" },
+          "root_cause_type": {
+            "type": "string",
+            "enum": ["architectural", "implementation", "requirement_gap", "design_flaw"]
+          },
+          "affected_components": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "architectural_impact": { "type": "string" },
+          "proposed_adr": { "type": "string" },
+          "severity": {
+            "type": "string",
+            "enum": ["critical", "major", "minor"]
+          }
+        },
+        "required": ["gap_id", "description", "capability", "root_cause", "severity"],
+        "additionalProperties": false
+      }
+    },
+    "architectural_insights": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "insight_id": { "type": "string" },
+          "observation": { "type": "string" },
+          "root_architectural_cause": { "type": "string" },
+          "suggested_approach": { "type": "string" },
+          "recommends_adr": { "type": "boolean" },
+          "priority": { "type": "integer", "minimum": 1, "maximum": 5 }
+        },
+        "required": ["insight_id", "observation", "root_architectural_cause", "suggested_approach"],
+        "additionalProperties": false
+      }
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "scenario": { "type": "string" },
+          "input": { "type": "string" },
+          "expected_system_behavior": { "type": "string" },
+          "actual_system_behavior": { "type": "string" },
+          "passed": { "type": "boolean" },
+          "gap_revealed": { "type": "string" },
+          "notes": { "type": "string" }
+        },
+        "required": ["scenario", "input", "expected_system_behavior", "actual_system_behavior", "passed"],
+        "additionalProperties": false
+      }
+    },
+    "production_readiness": {
+      "type": "object",
+      "properties": {
+        "overall_assessment": {
+          "type": "string",
+          "enum": ["ready", "conditional", "not_ready"]
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "check": { "type": "string" },
+              "passed": { "type": "boolean" },
+              "details": { "type": "string" }
+            },
+            "required": ["check", "passed"],
+            "additionalProperties": false
+          }
+        },
+        "blocking_gaps": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["overall_assessment", "checks"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["capability_matrix"],
+  "additionalProperties": false
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "smart_task:spec_driven_graph:dependency_edges:v1",
+  "title": "DependencyEdges",
+  "description": "Schema for dependency edge metadata defining relationships between nodes",
+  "type": "object",
+  "required": ["graph_id", "source_node", "target_node", "edge_type"],
+  "properties": {
+    "graph_id": {
+      "type": "string",
+      "description": "Parent dependency graph identifier (e.g. DG-001)",
+      "pattern": "^DG-\\d+$"
+    },
+    "source_node": {
+      "type": "string",
+      "description": "Source node identifier (e.g. DN-001)",
+      "pattern": "^DN-\\d+$"
+    },
+    "target_node": {
+      "type": "string",
+      "description": "Target node identifier (e.g. DN-002)",
+      "pattern": "^DN-\\d+$"
+    },
+    "edge_type": {
+      "type": "string",
+      "description": "Type of dependency relationship",
+      "enum": ["depends_on", "blocks", "triggers"]
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Optional metadata for the edge",
+      "properties": {
+        "rationale": {
+          "type": "string",
+          "description": "Rationale explaining why this dependency exists"
+        },
+        "strength": {
+          "type": "string",
+          "description": "Strength of the dependency",
+          "enum": ["hard", "soft"]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

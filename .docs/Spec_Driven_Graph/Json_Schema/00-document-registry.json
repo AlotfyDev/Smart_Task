@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "document-registry",
+  "title": "Document Registry Schema",
+  "description": "Central registry for all document classes, statuses, and edge types in the Smart Task system. Serves as the single source of truth for document metadata.",
+  "type": "object",
+  "properties": {
+    "doc_classes": {
+      "type": "array",
+      "description": "All registered document classes in the system",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Unique snake_case identifier (e.g., 'prd', 'architecture')",
+            "pattern": "^[a-z][a-z_]*$"
+          },
+          "name": {
+            "type": "string",
+            "description": "Official human-readable name (e.g., 'Product Requirements Document')"
+          },
+          "prefix": {
+            "type": "string",
+            "description": "Prefix used in document IDs (e.g., 'PRD', 'ARCH')",
+            "pattern": "^[A-Z][A-Z0-9_-]*$"
+          },
+          "chain_order": {
+            "type": ["integer", "null"],
+            "minimum": 0,
+            "description": "Position in vertical chain (0-based, null for cross-cutting)"
+          },
+          "parent_code": {
+            "type": ["string", "null"],
+            "description": "Immediate parent in the chain (null for root or cross-cutting)"
+          },
+          "is_cross_cutting": {
+            "type": "boolean",
+            "description": "Whether this doc type is cross-cutting (not part of vertical chain)"
+          },
+          "is_mandatory": {
+            "type": "boolean",
+            "description": "Whether this doc type is mandatory in its chain context"
+          }
+        },
+        "required": ["code", "name", "prefix", "is_cross_cutting", "is_mandatory"],
+        "additionalProperties": false
+      }
+    },
+    "doc_statuses": {
+      "type": "array",
+      "description": "Allowed statuses per document class, defining the lifecycle of each doc type",
+      "items": {
+        "type": "object",
+        "properties": {
+          "doc_code": {
+            "type": "string",
+            "description": "Reference to a doc_class code"
+          },
+          "status": {
+            "type": "string",
+            "description": "Status identifier (snake_case, e.g., 'draft', 'approved')",
+            "pattern": "^[a-z][a-z_]*$"
+          },
+          "sort_order": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Order of the status in the lifecycle sequence"
+          },
+          "description": {
+            "type": "string",
+            "description": "Human-readable description of what this status means"
+          }
+        },
+        "required": ["doc_code", "status", "sort_order", "description"],
+        "additionalProperties": false
+      }
+    },
+    "edge_types": {
+      "type": "array",
+      "description": "Catalog of all permitted relationship types between documents",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Unique edge type identifier (e.g., 'parent', 'references')",
+            "pattern": "^[a-z][a-z_]*$"
+          },
+          "name": {
+            "type": "string",
+            "description": "Human-readable name (e.g., 'Parent', 'References')"
+          },
+          "description": {
+            "type": "string",
+            "description": "Semantic description of the relationship"
+          },
+          "is_directional": {
+            "type": "boolean",
+            "description": "Whether the edge has a direction (true) or is bidirectional (false)"
+          }
+        },
+        "required": ["code", "name", "description", "is_directional"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["doc_classes", "doc_statuses", "edge_types"],
+  "additionalProperties": false
+}

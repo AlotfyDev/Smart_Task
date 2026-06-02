@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ADR JSON Fields",
+  "type": "object",
+  "properties": {
+    "considered_options": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "option": { "type": "string" },
+          "pros": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "cons": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "reason_rejected": { "type": "string" }
+        },
+        "required": ["option", "pros", "cons", "reason_rejected"]
+      }
+    },
+    "deciders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "role": { "type": "string" }
+        },
+        "required": ["name", "role"]
+      }
+    },
+    "supersedes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "xspec_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "dst_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["considered_options"]
+}

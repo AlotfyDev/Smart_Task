@@ -1,0 +1,206 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "architectural-taxonomy",
+  "title": "Architectural Taxonomy Schema",
+  "description": "Standard classification of target system components: domains, layers, component types, bounded contexts, integration patterns, and architectural styles. Provides a shared language for describing components and relationships across the system.",
+  "type": "object",
+  "properties": {
+    "domains": {
+      "type": "array",
+      "description": "Business domains — system subdivisions by business area",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Unique snake_case identifier (e.g., 'trading', 'risk')",
+            "pattern": "^[a-z][a-z_]*$"
+          },
+          "name": {
+            "type": "string",
+            "description": "Official human-readable name (e.g., 'Trading', 'Risk')"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of the domain's purpose and scope"
+          }
+        },
+        "required": ["code", "name", "description"],
+        "additionalProperties": false
+      }
+    },
+    "layers": {
+      "type": "array",
+      "description": "Architectural layers — organizational levels of components from outermost to innermost",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Unique snake_case identifier (e.g., 'presentation', 'domain')",
+            "pattern": "^[a-z][a-z_]*$"
+          },
+          "name": {
+            "type": "string",
+            "description": "Official human-readable name (e.g., 'Presentation', 'Domain')"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of the layer's role in the architecture"
+          },
+          "sort_order": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Layer ordering (0 = outermost, higher = more inner)"
+          }
+        },
+        "required": ["code", "name", "description", "sort_order"],
+        "additionalProperties": false
+      }
+    },
+    "component_types": {
+      "type": "array",
+      "description": "Component types — stereotypical classification of system components",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Unique snake_case identifier (e.g., 'service', 'repository')",
+            "pattern": "^[a-z][a-z_]*$"
+          },
+          "name": {
+            "type": "string",
+            "description": "Official human-readable name (e.g., 'Service', 'Repository')"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of this component type"
+          },
+          "typical_layer": {
+            "type": ["string", "null"],
+            "description": "Layer code where this type typically resides",
+            "pattern": "^[a-z][a-z_]*$"
+          }
+        },
+        "required": ["code", "name", "description"],
+        "additionalProperties": false
+      }
+    },
+    "bounded_contexts": {
+      "type": "array",
+      "description": "Bounded contexts — context boundaries with context map and shared entities",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Unique identifier (e.g., 'ctx-order-execution', 'ctx-risk-mgmt')"
+          },
+          "name": {
+            "type": "string",
+            "description": "Official human-readable name (e.g., 'Order Execution')"
+          },
+          "domain_code": {
+            "type": "string",
+            "description": "Reference to the parent business domain code"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of this bounded context's purpose"
+          },
+          "context_map": {
+            "type": "array",
+            "description": "Relationships to other bounded contexts",
+            "items": {
+              "type": "object",
+              "properties": {
+                "target_context": {
+                  "type": "string",
+                  "description": "Code of the target bounded context"
+                },
+                "relationship_type": {
+                  "type": "string",
+                  "description": "Type of relationship (e.g., 'upstream', 'downstream', 'feeds', 'notifies', 'subscribes')"
+                },
+                "communication_pattern": {
+                  "type": "string",
+                  "description": "Communication pattern used (e.g., 'event', 'rest', 'messaging')"
+                }
+              },
+              "required": ["target_context", "relationship_type", "communication_pattern"],
+              "additionalProperties": false
+            }
+          },
+          "shared_entities": {
+            "type": "array",
+            "description": "Entity names shared with other contexts",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["code", "name", "domain_code", "description"],
+        "additionalProperties": false
+      }
+    },
+    "integration_patterns": {
+      "type": "array",
+      "description": "Integration patterns — how components communicate with each other",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Unique snake_case identifier (e.g., 'rest', 'event', 'grpc')",
+            "pattern": "^[a-z][a-z_]*$"
+          },
+          "name": {
+            "type": "string",
+            "description": "Official human-readable name (e.g., 'RESTful API', 'Event-Driven')"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of the integration pattern"
+          },
+          "protocol": {
+            "type": ["string", "null"],
+            "description": "Communication protocol used (e.g., 'HTTP', 'gRPC', 'AMQP')"
+          },
+          "async": {
+            "type": "boolean",
+            "description": "Whether this pattern is asynchronous (true) or synchronous (false)"
+          }
+        },
+        "required": ["code", "name", "description", "async"],
+        "additionalProperties": false
+      }
+    },
+    "architectural_styles": {
+      "type": "array",
+      "description": "Architectural styles — the overall architectural approach of the system",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Unique snake_case identifier (e.g., 'clean_architecture', 'hexagonal')",
+            "pattern": "^[a-z][a-z_]*$"
+          },
+          "name": {
+            "type": "string",
+            "description": "Official human-readable name (e.g., 'Clean Architecture', 'Hexagonal')"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of the architectural style and its principles"
+          }
+        },
+        "required": ["code", "name", "description"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["domains", "layers", "component_types", "integration_patterns", "architectural_styles"],
+  "additionalProperties": false
+}

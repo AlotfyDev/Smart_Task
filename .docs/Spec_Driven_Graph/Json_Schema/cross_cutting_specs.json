@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Cross-Cutting Specs JSON Fields",
+  "type": "object",
+  "properties": {
+    "specification": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "expression": { "type": "string" },
+          "scope": { "type": "string" },
+          "enforcement": { "type": "string", "enum": ["hard", "soft"] },
+          "category": { "type": "string", "enum": ["logging", "metrics", "tracing", "alerts"] },
+          "standard": { "type": "string" },
+          "tools": { "type": "array", "items": { "type": "string" } },
+          "required": { "type": "boolean" },
+          "domain": { "type": "string", "enum": ["auth", "encryption", "audit", "compliance"] },
+          "requirement": { "type": "string" },
+          "standard_ref": { "type": "string" },
+          "metric": { "type": "string", "enum": ["latency", "throughput", "concurrency"] },
+          "target": { "type": "string" },
+          "concern": { "type": "string", "enum": ["api_versioning", "backward_compat", "migration"] },
+          "policy": { "type": "string" },
+          "area": { "type": "string", "enum": ["deployment", "scaling", "backup", "monitoring"] }
+        },
+        "oneOf": [
+          { "required": ["id", "expression", "scope", "enforcement"] },
+          { "required": ["category", "standard", "tools", "required"] },
+          { "required": ["domain", "requirement", "standard_ref"] },
+          { "required": ["metric", "target", "scope"] },
+          { "required": ["concern", "policy"] },
+          { "required": ["area", "requirement"] }
+        ]
+      }
+    },
+    "applies_to_domains": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "satisfies_req": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["specification"]
+}

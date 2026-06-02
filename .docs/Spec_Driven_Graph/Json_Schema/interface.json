@@ -1,0 +1,197 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "interface-json-fields",
+  "title": "Interface JSON Fields Schema",
+  "type": "object",
+  "properties": {
+    "signature": {
+      "oneOf": [
+        {
+          "title": "REST API",
+          "type": "object",
+          "properties": {
+            "method": {
+              "type": "string",
+              "enum": ["GET", "POST", "PUT", "DELETE", "PATCH"]
+            },
+            "path": { "type": "string" },
+            "request": {
+              "type": "object",
+              "properties": {
+                "headers": { "type": "object" },
+                "query": { "type": "object" },
+                "body": { "type": "object" }
+              },
+              "additionalProperties": false
+            },
+            "response": {
+              "type": "object",
+              "properties": {
+                "status": { "type": "integer" },
+                "body": { "type": "object" }
+              },
+              "required": ["status"],
+              "additionalProperties": false
+            }
+          },
+          "required": ["method", "path"],
+          "additionalProperties": false
+        },
+        {
+          "title": "gRPC",
+          "type": "object",
+          "properties": {
+            "service": { "type": "string" },
+            "rpc": { "type": "string" },
+            "request_type": { "type": "string" },
+            "response_type": { "type": "string" }
+          },
+          "required": ["service", "rpc", "request_type", "response_type"],
+          "additionalProperties": false
+        },
+        {
+          "title": "Event",
+          "type": "object",
+          "properties": {
+            "topic": { "type": "string" },
+            "payload": { "type": "object" },
+            "producer": { "type": "string" },
+            "consumer": { "type": "string" }
+          },
+          "required": ["topic", "payload"],
+          "additionalProperties": false
+        },
+        {
+          "title": "CLI",
+          "type": "object",
+          "properties": {
+            "command": { "type": "string" },
+            "args": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "flags": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "type": { "type": "string" },
+                  "required": { "type": "boolean" }
+                },
+                "required": ["name"],
+                "additionalProperties": false
+              }
+            },
+            "stdin": { "type": "string" },
+            "stdout": { "type": "string" }
+          },
+          "required": ["command"],
+          "additionalProperties": false
+        },
+        {
+          "title": "Function",
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "params": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "type": { "type": "string" }
+                },
+                "required": ["name", "type"],
+                "additionalProperties": false
+              }
+            },
+            "return": { "type": "string" },
+            "async": { "type": "boolean" }
+          },
+          "required": ["name", "params", "return"],
+          "additionalProperties": false
+        },
+        {
+          "title": "GraphQL",
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["query", "mutation", "subscription"]
+            },
+            "field": { "type": "string" },
+            "args": { "type": "object" },
+            "return_type": { "type": "string" }
+          },
+          "required": ["type", "field", "return_type"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "preconditions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "condition": { "type": "string" },
+          "description": { "type": "string" }
+        },
+        "required": ["condition", "description"],
+        "additionalProperties": false
+      }
+    },
+    "postconditions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "condition": { "type": "string" },
+          "description": { "type": "string" }
+        },
+        "required": ["condition", "description"],
+        "additionalProperties": false
+      }
+    },
+    "invariants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "expression": { "type": "string" },
+          "description": { "type": "string" }
+        },
+        "required": ["expression", "description"],
+        "additionalProperties": false
+      }
+    },
+    "error_codes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": { "type": "string" },
+          "http_status": { "type": "integer" },
+          "message": { "type": "string" },
+          "description": { "type": "string" }
+        },
+        "required": ["code", "http_status", "message", "description"],
+        "additionalProperties": false
+      }
+    },
+    "spec_topic_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "dst_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "xspec_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["signature", "error_codes"],
+  "additionalProperties": false
+}

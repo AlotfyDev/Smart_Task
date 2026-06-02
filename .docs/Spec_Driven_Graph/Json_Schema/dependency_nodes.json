@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "smart_task:spec_driven_graph:dependency_nodes:v1",
+  "title": "DependencyNodes",
+  "description": "Schema for dependency node metadata",
+  "type": "object",
+  "required": ["id", "graph_id", "ref_type", "ref_id", "title"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique node identifier (e.g. DN-001)",
+      "pattern": "^DN-\\d+$"
+    },
+    "graph_id": {
+      "type": "string",
+      "description": "Parent dependency graph identifier (e.g. DG-001)",
+      "pattern": "^DG-\\d+$"
+    },
+    "ref_type": {
+      "type": "string",
+      "description": "Type of referenced entity",
+      "enum": ["topic", "component", "task"]
+    },
+    "ref_id": {
+      "type": "string",
+      "description": "Reference identifier for the entity (e.g. TOPIC-001, CMP-001)"
+    },
+    "title": {
+      "type": "string",
+      "description": "Node title"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Optional metadata for the node",
+      "properties": {
+        "estimated_effort": {
+          "type": "string",
+          "description": "Estimated effort level",
+          "enum": ["S", "M", "L"]
+        },
+        "owner_role": {
+          "type": "string",
+          "description": "Role responsible for this node (e.g. 'backend', 'frontend', 'devops')"
+        },
+        "complexity": {
+          "type": "string",
+          "description": "Implementation complexity",
+          "enum": ["low", "medium", "high"]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

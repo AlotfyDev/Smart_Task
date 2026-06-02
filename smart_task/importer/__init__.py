@@ -24,11 +24,11 @@ class TopicToTicketImporter:
     Transform topic files into micro-task tickets using mapping rules.
     """
 
-    def __init__(self, db_path: Path, repo: TicketRepository | None = None) -> None:
+    def __init__(self, db_path: Path | None = None, repo: TicketRepository | None = None) -> None:
         self._db_path = db_path
         self._repo = repo
         if self._repo is None:
-            self._repo = TicketRepository(db_path)
+            self._repo = TicketRepository(db_path or Path("smart_task.db"))
         self._owns_repo = repo is None
 
     def __enter__(self) -> "TopicToTicketImporter":

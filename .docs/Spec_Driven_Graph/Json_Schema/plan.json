@@ -1,0 +1,183 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "smart_task:spec_driven_graph:plan:v1",
+  "title": "Plan",
+  "description": "Schema for execution plan phases, critical path, tech stack, and risks",
+  "type": "object",
+  "required": ["phases", "tech_stack", "risks", "satisfies_refs"],
+  "properties": {
+    "phases": {
+      "type": "array",
+      "description": "Ordered phases derived from topological sort of the dependency graph DAG",
+      "items": {
+        "type": "object",
+        "required": ["phase", "name", "node_ids", "topological_level"],
+        "properties": {
+          "phase": {
+            "type": "integer",
+            "description": "Phase number (1-indexed)",
+            "minimum": 1
+          },
+          "name": {
+            "type": "string",
+            "description": "Phase name"
+          },
+          "description": {
+            "type": "string",
+            "description": "Detailed description of what this phase covers"
+          },
+          "node_ids": {
+            "type": "array",
+            "description": "List of dependency node IDs assigned to this phase",
+            "items": {
+              "type": "string",
+              "pattern": "^DN-\\d+$"
+            },
+            "minItems": 1
+          },
+          "topological_level": {
+            "type": "integer",
+            "description": "Topological level in the DAG (0 = no dependencies)",
+            "minimum": 0
+          },
+          "milestones": {
+            "type": "array",
+            "description": "List of milestone descriptions for this phase",
+            "items": {
+              "type": "string"
+            }
+          },
+          "estimated_duration": {
+            "type": "string",
+            "description": "Estimated duration for this phase (e.g. '2 weeks', '3 days')"
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "critical_path": {
+      "type": "array",
+      "description": "Longest dependency chain determining minimum project duration (optional)",
+      "items": {
+        "type": "object",
+        "required": ["step", "node_id", "name"],
+        "properties": {
+          "step": {
+            "type": "integer",
+            "description": "Step number in the critical path sequence",
+            "minimum": 1
+          },
+          "node_id": {
+            "type": "string",
+            "description": "Dependency node ID",
+            "pattern": "^DN-\\d+$"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the node on the critical path"
+          },
+          "duration_estimate": {
+            "type": "string",
+            "description": "Estimated duration for this step (e.g. '5 days', '1 week')"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "tech_stack": {
+      "type": "array",
+      "description": "Technology stack used by this plan",
+      "items": {
+        "type": "object",
+        "required": ["technology", "version", "purpose"],
+        "properties": {
+          "technology": {
+            "type": "string",
+            "description": "Technology name (e.g. 'Python', 'React', 'PostgreSQL')"
+          },
+          "version": {
+            "type": "string",
+            "description": "Technology version (e.g. '3.11', '18.2', '15')"
+          },
+          "purpose": {
+            "type": "string",
+            "description": "Purpose or role this technology serves in the plan"
+          },
+          "justification": {
+            "type": "string",
+            "description": "Why this technology was chosen over alternatives"
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "risks": {
+      "type": "array",
+      "description": "Risks identified for the plan phases",
+      "items": {
+        "type": "object",
+        "required": ["phase", "risk", "probability", "impact", "mitigation"],
+        "properties": {
+          "phase": {
+            "type": "integer",
+            "description": "Phase number this risk applies to",
+            "minimum": 1
+          },
+          "node_ids": {
+            "type": "array",
+            "description": "Specific node IDs affected by this risk",
+            "items": {
+              "type": "string",
+              "pattern": "^DN-\\d+$"
+            }
+          },
+          "risk": {
+            "type": "string",
+            "description": "Description of the risk"
+          },
+          "probability": {
+            "type": "string",
+            "description": "Probability of occurrence",
+            "enum": ["low", "medium", "high"]
+          },
+          "impact": {
+            "type": "string",
+            "description": "Impact severity if risk materializes",
+            "enum": ["low", "medium", "high"]
+          },
+          "mitigation": {
+            "type": "string",
+            "description": "Mitigation strategy for the risk"
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "satisfies_refs": {
+      "type": "array",
+      "description": "References (SPEC, TOPIC) that this plan satisfies",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "xspec_ids": {
+      "type": "array",
+      "description": "Cross-cutting spec IDs referenced by this plan (optional)",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dst_ids": {
+      "type": "array",
+      "description": "Data structure IDs used by this plan (optional)",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,197 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "execution-plan-json-fields",
+  "title": "Execution Plan JSON Fields Schema",
+  "type": "object",
+  "properties": {
+    "algorithm_spec": {
+      "type": "object",
+      "properties": {
+        "overview": { "type": "string" },
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "step": { "type": "integer" },
+              "action": { "type": "string" },
+              "input": { "type": "string" },
+              "output": { "type": "string" }
+            },
+            "required": ["step", "action"],
+            "additionalProperties": false
+          }
+        },
+        "pseudocode": { "type": "string" },
+        "flow_diagram": { "type": "string" }
+      },
+      "required": ["overview", "steps"],
+      "additionalProperties": false
+    },
+    "implementation_details": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "module": { "type": "string" },
+          "file": { "type": "string" },
+          "approach": { "type": "string" },
+          "classes": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "patterns": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "required": ["module", "file", "approach"],
+        "additionalProperties": false
+      }
+    },
+    "data_flow_logic": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "from": { "type": "string" },
+          "to": { "type": "string" },
+          "transformation": { "type": "string" },
+          "condition": { "type": "string" }
+        },
+        "required": ["from", "to", "transformation"],
+        "additionalProperties": false
+      }
+    },
+    "business_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rule_id": { "type": "string" },
+          "condition": { "type": "string" },
+          "action": { "type": "string" },
+          "priority": { "type": "integer", "minimum": 1 }
+        },
+        "required": ["rule_id", "condition", "action", "priority"],
+        "additionalProperties": false
+      }
+    },
+    "complexity_analysis": {
+      "type": "object",
+      "properties": {
+        "time": { "type": "string" },
+        "space": { "type": "string" },
+        "bottleneck": { "type": "string" },
+        "optimization_notes": { "type": "string" }
+      },
+      "required": ["time", "space"],
+      "additionalProperties": false
+    },
+    "edge_case_handling": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "case": { "type": "string" },
+          "expected": { "type": "string" },
+          "handling": { "type": "string" }
+        },
+        "required": ["case", "expected", "handling"],
+        "additionalProperties": false
+      }
+    },
+    "file_touches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" },
+          "purpose": { "type": "string" },
+          "change_type": {
+            "type": "string",
+            "enum": ["create", "modify", "delete"]
+          },
+          "depends_on": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "required": ["path", "purpose", "change_type"],
+        "additionalProperties": false
+      }
+    },
+    "context_bundle": {
+      "type": "object",
+      "properties": {
+        "architecture_overview": { "type": "string" },
+        "relevant_entities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "entity": { "type": "string" },
+              "fields": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "source": { "type": "string" }
+            },
+            "required": ["entity", "source"],
+            "additionalProperties": false
+          }
+        },
+        "relevant_invariants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "invariant": { "type": "string" },
+              "source": { "type": "string" }
+            },
+            "required": ["invariant", "source"],
+            "additionalProperties": false
+          }
+        },
+        "relevant_spec_snippets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "interface": { "type": "string" },
+              "behavior": { "type": "string" },
+              "source": { "type": "string" }
+            },
+            "required": ["interface", "behavior", "source"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["architecture_overview"],
+      "additionalProperties": false
+    },
+    "context_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "doc_type": { "type": "string" },
+          "doc_id": { "type": "string" },
+          "edge_type": { "type": "string" }
+        },
+        "required": ["doc_type", "doc_id", "edge_type"],
+        "additionalProperties": false
+      }
+    },
+    "xspec_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "dst_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["algorithm_spec", "implementation_details", "data_flow_logic", "business_rules"],
+  "additionalProperties": false
+}

@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "spec-topic-json-fields",
+  "title": "Spec Topic JSON Fields Schema",
+  "type": "object",
+  "properties": {
+    "detailed_spec": {
+      "type": "object",
+      "properties": {
+        "behavior": { "type": "string" },
+        "input": {
+          "type": "object",
+          "patternProperties": {
+            "^.*$": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "output": {
+          "type": "object",
+          "patternProperties": {
+            "^.*$": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "preconditions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "postconditions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "invariants": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "error_handling": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "condition": { "type": "string" },
+              "response": { "type": "string" }
+            },
+            "required": ["condition", "response"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["behavior", "preconditions", "postconditions", "error_handling"],
+      "additionalProperties": false
+    },
+    "test_scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "scenario": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["unit", "integration", "e2e"]
+          },
+          "expected": { "type": "string" }
+        },
+        "required": ["id", "scenario", "type", "expected"],
+        "additionalProperties": false
+      }
+    },
+    "satisfies_spec_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "file_touches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" },
+          "purpose": { "type": "string" },
+          "change_type": {
+            "type": "string",
+            "enum": ["create", "modify", "delete"]
+          }
+        },
+        "required": ["path", "purpose", "change_type"],
+        "additionalProperties": false
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "xspec_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "dst_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["detailed_spec", "test_scenarios", "satisfies_spec_refs"],
+  "additionalProperties": false
+}
